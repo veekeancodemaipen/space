@@ -166,7 +166,7 @@ export const projects: Project[] = [
   {
     slug: "ai-web3-learning",
     title: "Onchain Bootcamp 2025",
-    category: "Web3 / Blockchain",
+    category: "Business & Strategy",
     year: "2025",
     description:
       "2nd Runner Up at Onchain Bootcamp 2025 — a competitive blockchain programme where I joined as Business Developer, bridging the gap between on-chain mechanics and real-world business cases.",
