@@ -10,6 +10,7 @@ export const projects: Project[] = [
     slug: "kubkathon-2026",
     title: "INTerCSII Hackathon 2026",
     category: "Event / Community",
+    kind: "competition" as const,
     year: "2026",
     description:
       "Semi-finalist at INTerCSII Hackathon 2026 — a cross-university hackathon where I led business development and went head-to-head with teams across Thailand.",
@@ -37,6 +38,7 @@ export const projects: Project[] = [
     slug: "aurea-condo-case",
     title: "CP CUP 2025 — Marketing Case",
     category: "Business & Strategy",
+    kind: "competition" as const,
     year: "2025",
     description:
       "POC-round competitor at CP CUP 2025, building a full marketing strategy and go-to-market case under competition conditions.",
@@ -61,30 +63,31 @@ export const projects: Project[] = [
       "In marketing strategy, the insight is the product. Everything else is packaging.",
   },
   {
-    slug: "thai-fruit-export-ds",
-    title: "Thai Fruit Export — Data Story",
+    slug: "bitcoin-gold-m2-analysis",
+    title: "Bitcoin, Gold & M2 Money Supply — Statistical Analysis",
     category: "Data Science",
     year: "2025",
     description:
-      "Analysis of Thai fruit export trends to surface seasonal demand patterns and high-opportunity destination markets.",
-    role: "Data Analyst",
-    tools: ["Python", "pandas", "Plotly", "Jupyter"],
+      "A group research paper for Probability & Statistics (2102203) at Chulalongkorn University analysing 180 months of data (Aug 2010 – Jul 2025) to test whether Bitcoin behaves like gold or tracks money supply.",
+    role: "Data Analyst / Co-author",
+    tools: ["Python", "pandas", "Correlation Analysis", "t-tests", "Linear Regression"],
     featured: false,
     coverImage:
-      "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1200&q=60",
-    timelinePhase: "builder",
+      "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1200&q=60",
+    timelinePhase: "university",
     skills: ["data", "coding", "strategy"],
-    brief: "Turn raw trade data into an actionable picture of where Thai fruit actually goes.",
+    brief:
+      "Test, with statistics, the popular claim that Bitcoin is 'digital gold' or a hedge tied to money supply — using 180 months of real data.",
     challenge:
-      "Multi-year customs datasets with inconsistent units, missing months, and no clear story on the surface.",
+      "Three series (Bitcoin, gold, M2) on different scales and dynamics, with the analysis needing to hold up to formal statistical scrutiny, not just eyeballing a chart.",
     process:
-      "Cleaned and normalised the data, engineered seasonality features, and built interactive dashboards to let the patterns speak.",
+      "Assembled 15 years of monthly data, computed a correlation matrix, ran t-tests on returns, and fit a multiple linear regression — with Sutthikan Panla and Saknatee Onrak.",
     output:
-      "An interactive notebook and dashboard ranking destination markets by growth rate and demand concentration.",
+      "Bitcoin showed near-zero correlation with both gold (r = −0.07) and M2 (r ≈ 0.01); tests confirmed its returns are statistically higher than both yet statistically independent of them.",
     impact:
-      "Surfaced three under-served markets worth deeper commercial exploration — and proved that EDA is itself a strategic skill.",
+      "Empirical evidence against the 'digital gold' framing — Bitcoin moved as its own asset class over the period, not as a proxy for gold or money supply.",
     learned:
-      "80% of data work is cleaning — and the cleaning is where the real insight hides.",
+      "A confident narrative collapses fast under a correlation matrix. Let the data set the story, not the headline.",
   },
   {
     slug: "tcas-allocation-sim",
@@ -167,6 +170,7 @@ export const projects: Project[] = [
     slug: "ai-web3-learning",
     title: "Onchain Bootcamp 2025",
     category: "Business & Strategy",
+    kind: "competition" as const,
     year: "2025",
     description:
       "2nd Runner Up at Onchain Bootcamp 2025 — a competitive blockchain programme where I joined as Business Developer, bridging the gap between on-chain mechanics and real-world business cases.",

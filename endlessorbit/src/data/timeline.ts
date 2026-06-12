@@ -30,7 +30,7 @@ export const timeline: TimelineItem[] = [
     story:
       "Electrical Engineering at Chulalongkorn University widened the orbit in every direction. I dove into case competitions — 1st Runner Up at CUVI × KAsset Investment Bootcamp, POC Round at CP CUP — while building a life in campus community through CUEE Camp, rugby union, and Young Webmaster Camp (Web Marketing track). I found out that I genuinely love being in a room where the stakes feel real and the people are sharp.",
     tags: ["EE @ Chula", "Case Competitions", "Investment", "Community", "Leadership"],
-    relatedProjects: ["aurea-condo-case", "thai-fruit-export-ds"],
+    relatedProjects: ["aurea-condo-case", "bitcoin-gold-m2-analysis"],
     icon: "🛰️",
   },
   {

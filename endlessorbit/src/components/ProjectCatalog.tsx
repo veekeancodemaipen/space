@@ -30,12 +30,15 @@ export default function ProjectCatalog({ projects }: { projects: Project[] }) {
     });
   }, [projects, filter, onlyFeatured]);
 
+  const competitions = filtered.filter((p) => p.kind === "competition");
+  const work = filtered.filter((p) => p.kind !== "competition");
+
   return (
     <section id="projects" className="section-pad">
       <SectionHeading
         eyebrow="Project Catalog"
         title="Missions I've flown"
-        subtitle="A catalog of work across code, strategy, community, data, and design. Filter by category, or jump straight into a featured mission log."
+        subtitle="Competitions I've placed in, and the projects I've built — filter by category or feature."
       />
 
       {/* filters */}
@@ -67,16 +70,43 @@ export default function ProjectCatalog({ projects }: { projects: Project[] }) {
         </button>
       </div>
 
-      <motion.div
-        layout
-        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <AnimatePresence mode="popLayout">
-          {filtered.map((p) => (
-            <ProjectCard key={p.slug} project={p} />
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      {/* Competitions section */}
+      {competitions.length > 0 && (
+        <>
+          <h3 className="mb-4 font-display text-sm uppercase tracking-wider text-starwhite/60">
+            Competitions &amp; Awards
+          </h3>
+          <motion.div
+            layout
+            className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <AnimatePresence mode="popLayout">
+              {competitions.map((p) => (
+                <ProjectCard key={p.slug} project={p} />
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </>
+      )}
+
+      {/* Projects & Work section */}
+      {work.length > 0 && (
+        <>
+          <h3 className="mb-4 font-display text-sm uppercase tracking-wider text-starwhite/60">
+            Projects &amp; Work
+          </h3>
+          <motion.div
+            layout
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <AnimatePresence mode="popLayout">
+              {work.map((p) => (
+                <ProjectCard key={p.slug} project={p} />
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </>
+      )}
 
       {filtered.length === 0 && (
         <p className="mt-12 text-center text-starwhite/50">

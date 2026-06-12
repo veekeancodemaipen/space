@@ -23,6 +23,8 @@ export interface Project {
   slug: string;
   title: string;
   category: ProjectCategory;
+  /** Distinguishes competition entries from regular project / work entries. Defaults to "project". */
+  kind?: "project" | "competition";
   year: string;
   /** One-line catalog description */
   description: string;
