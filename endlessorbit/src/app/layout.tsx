@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: `%s · ${profile.name}`,
   },
   description:
-    "A cinematic space-journey portfolio. From a kid who loved games to a builder exploring science, code, communities, and projects. This is not the destination — this is the orbit.",
+    "Personal portfolio of Yossavee Adisornsuwan — EE student at Chulalongkorn University. Projects, competitions, and community work across engineering, business development, and Web3.",
   keywords: [
     "portfolio",
     "space",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${profile.name} — Endless Orbit`,
     description:
-      "From games to science, code, people, and projects. This is my orbit.",
+      "Personal portfolio — projects, competitions, and community work across engineering, business development, and Web3.",
     url: siteUrl,
     siteName: `${profile.name} — Endless Orbit`,
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — Endless Orbit`,
-    description: "A cinematic space-journey portfolio.",
+    description: "Personal portfolio of Yossavee Adisornsuwan.",
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],

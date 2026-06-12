@@ -13,13 +13,14 @@ const USERNAME =
   "";
 const TOKEN = process.env.GITHUB_TOKEN;
 
+// Real repos (snapshot) — used only if the GitHub API call fails.
 const SAMPLE_REPOS: GitHubRepo[] = [
-  { id: 1, name: "kubkathon", description: "Campus Web3 hackathon platform & resources.", language: "TypeScript", stars: 42, forks: 7, updatedAt: new Date(Date.now() - 5 * 86400000).toISOString(), htmlUrl: "https://github.com/your-github-username/kubkathon", homepage: "https://kubkathon.example.com" },
-  { id: 2, name: "tcas-sim", description: "TCAS-style university allocation simulator.", language: "TypeScript", stars: 31, forks: 4, updatedAt: new Date(Date.now() - 20 * 86400000).toISOString(), htmlUrl: "https://github.com/your-github-username/tcas-sim", homepage: "https://tcas-sim.example.com" },
-  { id: 3, name: "thai-fruit-export", description: "Data-science analysis of Thai fruit export trends.", language: "Jupyter Notebook", stars: 18, forks: 2, updatedAt: new Date(Date.now() - 40 * 86400000).toISOString(), htmlUrl: "https://github.com/your-github-username/thai-fruit-export", homepage: null },
-  { id: 4, name: "ai-web3-lab", description: "Experiments with AI agents and on-chain demos.", language: "Python", stars: 25, forks: 3, updatedAt: new Date(Date.now() - 2 * 86400000).toISOString(), htmlUrl: "https://github.com/your-github-username/ai-web3-lab", homepage: null },
-  { id: 5, name: "endless-orbit", description: "This cinematic space-journey portfolio.", language: "TypeScript", stars: 12, forks: 1, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/your-github-username/endless-orbit", homepage: "https://your-domain.com" },
-  { id: 6, name: "notion-utils", description: "Small scripts that run my Notion-based operations.", language: "TypeScript", stars: 9, forks: 1, updatedAt: new Date(Date.now() - 60 * 86400000).toISOString(), htmlUrl: "https://github.com/your-github-username/notion-utils", homepage: null },
+  { id: 1, name: "ic-plain-prep", description: "IC Plain (P1) exam-prep site — dark-mode UI + 100-question quiz.", language: "HTML", stars: 1, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/ic-plain-prep", homepage: null },
+  { id: 2, name: "space", description: "This portfolio site.", language: "TypeScript", stars: 0, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/space", homepage: null },
+  { id: 3, name: "Emag-Maxwell-s-Equations-Time-Harmonic-Field", description: "Coursework — Maxwell's equations, time-harmonic fields.", language: "HTML", stars: 0, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/Emag-Maxwell-s-Equations-Time-Harmonic-Field", homepage: null },
+  { id: 4, name: "engecon", description: "Engineering economics coursework.", language: "JavaScript", stars: 0, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/engecon", homepage: null },
+  { id: 5, name: "Linear-Transformation", description: "Coursework — linear transformations.", language: "HTML", stars: 0, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/Linear-Transformation", homepage: null },
+  { id: 6, name: "Optical-Properties-of-Materials", description: "Coursework — optical properties of materials.", language: "HTML", stars: 0, forks: 0, updatedAt: new Date().toISOString(), htmlUrl: "https://github.com/veekeancodemaipen/Optical-Properties-of-Materials", homepage: null },
 ];
 
 export function isGitHubConfigured(): boolean {

@@ -13,7 +13,7 @@ export const projects: Project[] = [
     kind: "competition" as const,
     year: "2026",
     description:
-      "Semi-finalist at INTerCSII Hackathon 2026 — a cross-university hackathon where I led business development and went head-to-head with teams across Thailand.",
+      "Semi-finalist at INTerCSII Hackathon 2026, a cross-university hackathon. Worked on the business side: problem framing, market sizing, and the pitch.",
     role: "Business Developer",
     tools: ["Notion", "Figma", "Pitch Deck", "Market Research", "Canva"],
     featured: true,
@@ -22,17 +22,16 @@ export const projects: Project[] = [
     timelinePhase: "builder",
     skills: ["event", "web3", "strategy", "presentation"],
     brief:
-      "Build a competitive business case and pitch it under pressure against the best teams in the room.",
+      "Build a business case and pitch it to judges within the hackathon timeframe.",
     challenge:
-      "Hackathons reward speed over polish — the challenge was producing a rigorous, defensible business model in hours, not weeks.",
+      "The business model had to be researched, built, and presented in hours, not weeks.",
     process:
-      "Defined the problem space, ran rapid market sizing, stress-tested assumptions with teammates, and prepared a crisp pitch for judges.",
-    output:
-      "A semi-final finish and a sharper instinct for separating signal from noise under time pressure.",
+      "Defined the problem space, ran market sizing, tested assumptions with teammates, and prepared the pitch.",
+    output: "Reached the semi-final round.",
     impact:
-      "Proved that business development skills — framing the problem, quantifying the opportunity, winning the room — matter as much as the technical build.",
+      "Hands-on experience taking a business case from problem framing to pitch under time constraints.",
     learned:
-      "Speed forces prioritisation. When you can't do everything, you learn fast what actually matters.",
+      "Time pressure forces prioritisation — you find out quickly which parts of the work actually matter.",
   },
   {
     slug: "aurea-condo-case",
@@ -50,17 +49,16 @@ export const projects: Project[] = [
     timelinePhase: "university",
     skills: ["strategy", "marketing", "presentation"],
     brief:
-      "Craft a sharp, ownable marketing strategy that solves a real business problem — and convince a room of industry judges.",
+      "Develop a marketing strategy for the case brief and present it to judges.",
     challenge:
-      "Case competitions reward clarity over volume. The hardest part is cutting the good ideas to keep only the essential ones.",
+      "Condensing the research and ideas into a short, clear presentation.",
     process:
-      "Diagnosed the business problem, segmented the audience, built a channel strategy with clear KPIs, and rehearsed the pitch down to the last second.",
-    output:
-      "A complete marketing case deck delivered at POC round — tight narrative, grounded numbers, clear recommendation.",
+      "Analysed the business problem, segmented the audience, built a channel plan with KPIs, and rehearsed the pitch.",
+    output: "A complete marketing case deck, presented at the POC round.",
     impact:
-      "Sharpened the ability to move from ambiguous brief to confident recommendation fast — a skill that transfers directly to the real world.",
+      "Practice turning an open-ended brief into a concrete recommendation within a competition deadline.",
     learned:
-      "In marketing strategy, the insight is the product. Everything else is packaging.",
+      "Clarity beats volume — cutting good ideas to keep the essential ones is most of the work.",
   },
   {
     slug: "bitcoin-gold-m2-analysis",
@@ -85,9 +83,9 @@ export const projects: Project[] = [
     output:
       "Bitcoin showed near-zero correlation with both gold (r = −0.07) and M2 (r ≈ 0.01); tests confirmed its returns are statistically higher than both yet statistically independent of them.",
     impact:
-      "Empirical evidence against the 'digital gold' framing — Bitcoin moved as its own asset class over the period, not as a proxy for gold or money supply.",
+      "Within the period studied, Bitcoin's returns did not track gold or M2 — evidence against the 'digital gold' framing for this sample.",
     learned:
-      "A confident narrative collapses fast under a correlation matrix. Let the data set the story, not the headline.",
+      "Let the data set the story, not the headline.",
   },
   {
     slug: "tcas-allocation-sim",
@@ -105,17 +103,16 @@ export const projects: Project[] = [
     timelinePhase: "builder",
     skills: ["coding", "data", "design"],
     brief:
-      "Build a no-friction, self-contained study tool for the IC Plain exam that you'd actually want to use.",
+      "Build a self-contained study tool for the IC Plain exam — a single page, no dependencies.",
     challenge:
-      "Most exam-prep sites are cluttered and distracting. The challenge was making something clean and focused with zero dependencies.",
+      "Keeping the site clean and usable without a framework or backend.",
     process:
-      "Designed the UI in a dark-mode fintech aesthetic, structured 100 questions across all exam domains, and wired up instant feedback and a progress tracker.",
+      "Designed a dark-mode UI, structured 100 questions across the exam domains, and wired up instant feedback and a progress tracker.",
     output:
-      "A live, open-source exam prep site — one file, no framework overhead, zero cost to host.",
-    impact:
-      "Useful for anyone sitting the P1 exam and a practical proof that thoughtful UI design makes studying less painful.",
+      "A live, open-source exam prep site — one file, no framework, free to host.",
+    impact: "Usable by anyone preparing for the P1 exam.",
     learned:
-      "Constraints are liberating. Working without a framework forces you to understand what frameworks actually do for you.",
+      "Working without a framework shows you what frameworks actually do for you.",
   },
   {
     slug: "online-merit-platform",
@@ -123,7 +120,7 @@ export const projects: Project[] = [
     category: "Business & Strategy",
     year: "2025",
     description:
-      "A business concept for a transparent, digitised merit-making and temple-donation platform that builds trust through a visible fund trail.",
+      "A business concept for a digitised merit-making and temple-donation platform, designed around a visible fund trail.",
     role: "Founder / Product Concept",
     tools: ["Notion", "Figma", "Business Model Canvas"],
     featured: false,
@@ -131,14 +128,14 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "builder",
     skills: ["strategy", "design", "marketing"],
-    brief: "Bring traditional merit-making into a digital-first, trust-first era.",
+    brief: "Design a digital merit-making concept where donors can see where the money goes.",
     challenge:
-      "Donation flows live and die on trust — especially when the audience skews older and is not native to digital payments.",
+      "Donation flows depend on trust — especially for an audience that skews older and is less used to digital payments.",
     process:
-      "Mapped the donor journey end-to-end, designed a ledger-based transparency mechanism, and modelled the revenue and network effects.",
-    output: "A validated concept deck with UX flows, a trust model, and a go-to-market framework.",
-    impact: "The transparency framework is reusable for any donation product where accountability is the core value proposition.",
-    learned: "Trust is a feature you design for, not a tagline you write.",
+      "Mapped the donor journey, designed a ledger-based transparency mechanism, and sketched the revenue model.",
+    output: "A concept deck with UX flows, a transparency model, and a go-to-market framework. Concept stage — not yet built or tested with users.",
+    impact: "The transparency mechanism could apply to other donation products where accountability matters.",
+    learned: "Trust has to be designed into the product, not written into the tagline.",
   },
   {
     slug: "posn-skr-content",
@@ -146,7 +143,7 @@ export const projects: Project[] = [
     category: "Academic",
     year: "2023",
     description:
-      "Founded and led an educational community to democratise access to POSN / Academic Olympiad resources — grew from zero to 470+ followers, then handed off to the next generation who scaled it past 1,000.",
+      "Founded an educational community sharing POSN / Academic Olympiad resources — grew to 470+ followers before handover; the next team has since grown it past 1,000.",
     role: "Founder & Head Mentor",
     tools: ["Notion", "LaTeX", "Canva", "Instagram"],
     liveUrl: "https://www.instagram.com/skr_academic_olympiad/",
@@ -155,16 +152,16 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "posn",
     skills: ["presentation", "strategy"],
-    brief: "Pay forward the POSN turning point that changed my own trajectory — and make it easier for the next student.",
+    brief: "Make Olympiad resources easier to find for students at my school and beyond.",
     challenge:
-      "Olympiad material is intimidating, gated, and scattered across hard-to-find sources. Most students don't know where to start.",
+      "Olympiad material is scattered across hard-to-find sources, and many students don't know where to start.",
     process:
       "Built a structured Notion knowledge base of notes and problem sets, recruited senior mentors, and ran consultation sessions for students inside and outside the school.",
     output:
-      "A live community with 470+ followers at handoff — sustained and grown to 1,000+ by the next cohort.",
+      "A community with 470+ followers at handoff, grown to 1,000+ by the next cohort.",
     impact:
-      "Lowered the barrier for younger students entering the Olympiad path, and built a sustainable operation that outlasted the founder.",
-    learned: "Teaching a thing is the fastest way to truly understand it. And a community only scales if you build it to run without you.",
+      "Made it easier for younger students to start the Olympiad path, and the community continued after I handed it off.",
+    learned: "Teaching something is the fastest way to understand it — and a community lasts only if it can run without you.",
   },
   {
     slug: "ai-web3-learning",
@@ -173,7 +170,7 @@ export const projects: Project[] = [
     kind: "competition" as const,
     year: "2025",
     description:
-      "2nd Runner Up at Onchain Bootcamp 2025 — a competitive blockchain programme where I joined as Business Developer, bridging the gap between on-chain mechanics and real-world business cases.",
+      "2nd Runner Up at Onchain Bootcamp 2025, a competitive blockchain programme. Joined as Business Developer, working on the business case and tokenomics.",
     role: "Business Developer",
     tools: ["Pitch Deck", "Tokenomics", "Notion", "Market Research"],
     featured: true,
@@ -181,16 +178,15 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "future",
     skills: ["coding", "web3", "data", "strategy"],
-    brief: "Prove that a blockchain project can work as a real business — not just a whitepaper.",
+    brief: "Turn a blockchain project into a workable business case.",
     challenge:
-      "Most Web3 teams are technically strong but struggle to articulate value to a non-crypto audience. My job was to close that gap.",
+      "Explaining on-chain mechanics in terms a non-crypto audience can evaluate.",
     process:
-      "Researched the on-chain ecosystem, modelled the business and tokenomics, crafted the go-to-market narrative, and co-led the final pitch.",
-    output:
-      "A 2nd Runner Up finish and a solid blueprint for translating blockchain mechanics into investor-ready business language.",
+      "Researched the on-chain ecosystem, modelled the business and tokenomics, wrote the go-to-market narrative, and co-presented the final pitch.",
+    output: "A 2nd Runner Up finish.",
     impact:
-      "Confirmed that the most valuable skill in Web3 right now is not coding Solidity — it's building the bridge between the tech and the people who need to believe in it.",
-    learned: "Crypto moves fast, but business fundamentals don't. Master both.",
+      "My first sustained work at the intersection of blockchain and business development — the area I now work in at Bitkub.",
+    learned: "Crypto moves fast, but business fundamentals don't.",
   },
 ];
 

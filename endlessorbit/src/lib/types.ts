@@ -70,8 +70,6 @@ export interface SkillNode {
   id: string;
   group: SkillGroup;
   label: string;
-  /** 0–100 proficiency, drives the star size */
-  level: number;
   /** Slugs of projects that demonstrate this skill */
   relatedProjects?: string[];
 }

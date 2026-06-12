@@ -10,7 +10,6 @@ import { seededRandom } from "@/lib/utils";
 interface Node {
   id: string;
   label: string;
-  level: number;
   related: string[];
   x: number;
   y: number;
@@ -29,7 +28,6 @@ export default function SkillsConstellation() {
       return {
         id: s.id,
         label: s.label,
-        level: s.level,
         related: s.relatedProjects ?? [],
         x: 50 + Math.cos(angle) * radius,
         y: 50 + Math.sin(angle) * radius * 0.82,
@@ -59,7 +57,7 @@ export default function SkillsConstellation() {
       <SectionHeading
         eyebrow="Skills Constellation"
         title="The shape of what I can do"
-        subtitle="Each star is a skill; lines connect skills that share a project. Hover or tap a star to light up the missions that prove it."
+        subtitle="Each star is a skill; lines connect skills that share a project. Hover or tap a star to see the related projects."
       />
 
       <div className="grid items-center gap-8 lg:grid-cols-[1.4fr_1fr]">
@@ -82,7 +80,8 @@ export default function SkillsConstellation() {
               );
             })}
             {nodes.map((n) => {
-              const r = 1.4 + (n.level / 100) * 2.4;
+              // Star size scales with how many projects back the skill.
+              const r = 1.6 + Math.min(n.related.length, 3) * 0.6;
               const isActive = active === n.id;
               return (
                 <g
@@ -130,14 +129,8 @@ export default function SkillsConstellation() {
               <h3 className="font-display text-xl font-bold text-cyan">
                 {activeNode.label}
               </h3>
-              <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-white/10">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-cyan to-violet"
-                  style={{ width: `${activeNode.level}%` }}
-                />
-              </div>
               <p className="mt-4 text-xs uppercase tracking-widest text-starwhite/50">
-                Proven in
+                Related projects
               </p>
               <ul className="mt-2 space-y-2">
                 {relatedProjects.map((p) => (
@@ -160,7 +153,7 @@ export default function SkillsConstellation() {
           ) : (
             <div className="flex h-full flex-col justify-center text-starwhite/50">
               <p className="text-sm">
-                ✦ Hover a star to explore a skill and the missions that prove it.
+                ✦ Hover a star to see a skill and its related projects.
               </p>
             </div>
           )}
