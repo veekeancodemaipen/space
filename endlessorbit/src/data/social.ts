@@ -1,9 +1,5 @@
 import type { SocialLink } from "@/lib/types";
 
-/**
- * 👉 LinkedIn → แก้ href เป็น https://linkedin.com/in/YOUR_HANDLE
- * 👉 Instagram → แก้ href เป็น https://instagram.com/YOUR_HANDLE
- */
 export const socialLinks: SocialLink[] = [
   {
     label: "GitHub",
@@ -14,14 +10,14 @@ export const socialLinks: SocialLink[] = [
   {
     label: "LinkedIn",
     icon: "linkedin",
-    href: "https://linkedin.com/in/YOUR_LINKEDIN_HANDLE",
-    handle: "in/YOUR_HANDLE",
+    href: "https://linkedin.com/in/yossavee",
+    handle: "in/yossavee",
   },
   {
     label: "Instagram",
     icon: "instagram",
-    href: "https://instagram.com/YOUR_IG_HANDLE",
-    handle: "@YOUR_HANDLE",
+    href: "https://instagram.com/vysvee_",
+    handle: "@vysvee_",
   },
   {
     label: "Email",

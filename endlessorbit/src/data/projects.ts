@@ -4,66 +4,61 @@ import type { Project } from "@/lib/types";
  * Mock project catalog — the default source of truth.
  * When Notion env vars are configured, `getProjects()` in src/lib/notion.ts
  * pulls live data instead and these become the fallback.
- *
- * 👉 Replace the placeholder copy, links, and cover images with your real work.
  */
 export const projects: Project[] = [
   {
     slug: "kubkathon-2026",
-    title: "KUBkathon 2026",
+    title: "INTerCSII Hackathon 2026",
     category: "Event / Community",
     year: "2026",
     description:
-      "A campus Web3 hackathon: workshop track, mentor pods, and a demo day for first-time builders.",
-    role: "Lead Organizer & Web3 Workshop Facilitator",
-    tools: ["Notion", "Figma", "Solidity", "Discord", "Canva"],
-    notionUrl: "https://www.notion.so/your-workspace/kubkathon-2026",
-    githubUrl: "https://github.com/your-github-username/kubkathon",
-    liveUrl: "https://kubkathon.example.com",
+      "Semi-finalist at INTerCSII Hackathon 2026 — a cross-university hackathon where I led business development and went head-to-head with teams across Thailand.",
+    role: "Business Developer",
+    tools: ["Notion", "Figma", "Pitch Deck", "Market Research", "Canva"],
     featured: true,
     coverImage:
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "builder",
     skills: ["event", "web3", "strategy", "presentation"],
     brief:
-      "Bring blockchain from buzzword to build for students who had never deployed a contract.",
+      "Build a competitive business case and pitch it under pressure against the best teams in the room.",
     challenge:
-      "Most attendees were complete beginners. We had to make Web3 approachable in a single weekend without dumbing it down.",
+      "Hackathons reward speed over polish — the challenge was producing a rigorous, defensible business model in hours, not weeks.",
     process:
-      "Designed a 3-hour hands-on workshop, recruited 8 mentors, built a Notion knowledge base, and ran a judged demo day with industry guests.",
+      "Defined the problem space, ran rapid market sizing, stress-tested assumptions with teammates, and prepared a crisp pitch for judges.",
     output:
-      "120+ participants, 18 shipped demos, a reusable curriculum, and a mentor network for the next cohort.",
+      "A semi-final finish and a sharper instinct for separating signal from noise under time pressure.",
     impact:
-      "Several teams continued their projects past the event; two joined follow-on incubator tracks.",
+      "Proved that business development skills — framing the problem, quantifying the opportunity, winning the room — matter as much as the technical build.",
     learned:
-      "Scaffolding beats lecturing — give people a working repo and a clear first PR and they fly.",
+      "Speed forces prioritisation. When you can't do everything, you learn fast what actually matters.",
   },
   {
     slug: "aurea-condo-case",
-    title: "AUREA Super-Luxury Condo Case",
+    title: "CP CUP 2025 — Marketing Case",
     category: "Business & Strategy",
     year: "2025",
     description:
-      "Go-to-market and positioning strategy for an ultra-luxury condominium in a national case competition.",
-    role: "Strategy Lead & Final Presenter",
-    tools: ["Excel", "PowerPoint", "Market Research", "Figma"],
-    notionUrl: "https://www.notion.so/your-workspace/aurea-case",
+      "POC-round competitor at CP CUP 2025, building a full marketing strategy and go-to-market case under competition conditions.",
+    role: "Marketing Strategist & Presenter",
+    tools: ["Excel", "PowerPoint", "Market Research", "Canva"],
     featured: true,
     coverImage:
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "university",
     skills: ["strategy", "marketing", "presentation"],
     brief:
-      "Differentiate a super-luxury tower in a saturated prime-district market.",
+      "Craft a sharp, ownable marketing strategy that solves a real business problem — and convince a room of industry judges.",
     challenge:
-      "The product was premium but undifferentiated. The buyer persona was emotional, not spec-driven.",
+      "Case competitions reward clarity over volume. The hardest part is cutting the good ideas to keep only the essential ones.",
     process:
-      "Segmented HNW buyers, benchmarked 6 competitors, and built a brand-experience narrative with a phased sales funnel.",
+      "Diagnosed the business problem, segmented the audience, built a channel strategy with clear KPIs, and rehearsed the pitch down to the last second.",
     output:
-      "A full GTM deck with pricing tiers, channel mix, and an experiential showroom concept.",
-    impact: "Top-ranking finish and judge recognition for the positioning narrative.",
+      "A complete marketing case deck delivered at POC round — tight narrative, grounded numbers, clear recommendation.",
+    impact:
+      "Sharpened the ability to move from ambiguous brief to confident recommendation fast — a skill that transfers directly to the real world.",
     learned:
-      "For luxury, you sell identity, not square meters. Story is the spec sheet.",
+      "In marketing strategy, the insight is the product. Everything else is packaging.",
   },
   {
     slug: "thai-fruit-export-ds",
@@ -71,54 +66,53 @@ export const projects: Project[] = [
     category: "Data Science",
     year: "2025",
     description:
-      "Analysis of Thai fruit export trends to surface seasonal demand and high-opportunity markets.",
+      "Analysis of Thai fruit export trends to surface seasonal demand patterns and high-opportunity destination markets.",
     role: "Data Analyst",
-    tools: ["Python", "pandas", "Plotly", "Jupyter", "Kaggle"],
-    githubUrl: "https://github.com/your-github-username/thai-fruit-export",
-    notionUrl: "https://www.notion.so/your-workspace/thai-fruit-export",
+    tools: ["Python", "pandas", "Plotly", "Jupyter"],
     featured: false,
     coverImage:
       "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "builder",
     skills: ["data", "coding", "strategy"],
-    brief: "Turn raw customs export data into an actionable market map.",
+    brief: "Turn raw trade data into an actionable picture of where Thai fruit actually goes.",
     challenge:
-      "Messy multi-year datasets with inconsistent units and missing months.",
+      "Multi-year customs datasets with inconsistent units, missing months, and no clear story on the surface.",
     process:
-      "Cleaned and normalised the data, engineered seasonality features, and built interactive demand dashboards.",
+      "Cleaned and normalised the data, engineered seasonality features, and built interactive dashboards to let the patterns speak.",
     output:
-      "An interactive notebook + dashboard ranking destination markets by growth and margin.",
+      "An interactive notebook and dashboard ranking destination markets by growth rate and demand concentration.",
     impact:
-      "Highlighted three under-served markets worth deeper trade exploration.",
+      "Surfaced three under-served markets worth deeper commercial exploration — and proved that EDA is itself a strategic skill.",
     learned:
       "80% of data work is cleaning — and the cleaning is where the real insight hides.",
   },
   {
     slug: "tcas-allocation-sim",
-    title: "TCAS Allocation Simulator",
+    title: "IC Plain Exam Prep Site",
     category: "Coding / GitHub",
     year: "2024",
     description:
-      "A web simulator that models TCAS-style university admission allocation under different ranking rules.",
+      "A dark-mode fintech-themed study site for Thailand's IC Plain (P1) investment certification exam — featuring 100 quiz questions, instant scoring, and a clean UI built for focused study.",
     role: "Full-Stack Developer",
-    tools: ["TypeScript", "Next.js", "Tailwind", "Algorithms"],
-    githubUrl: "https://github.com/your-github-username/tcas-sim",
-    liveUrl: "https://tcas-sim.example.com",
+    tools: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/veekeancodemaipen/ic-plain-prep",
     featured: true,
     coverImage:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "builder",
     skills: ["coding", "data", "design"],
     brief:
-      "Help students understand how admission allocation actually resolves their choices.",
+      "Build a no-friction, self-contained study tool for the IC Plain exam that you'd actually want to use.",
     challenge:
-      "The real allocation logic is opaque; students fear ranking choices wrong.",
+      "Most exam-prep sites are cluttered and distracting. The challenge was making something clean and focused with zero dependencies.",
     process:
-      "Implemented a deferred-acceptance matching engine and a visual step-through of each allocation round.",
-    output: "An open-source simulator with editable preferences and live results.",
-    impact: "Used by peers to stress-test their real application strategies.",
+      "Designed the UI in a dark-mode fintech aesthetic, structured 100 questions across all exam domains, and wired up instant feedback and a progress tracker.",
+    output:
+      "A live, open-source exam prep site — one file, no framework overhead, zero cost to host.",
+    impact:
+      "Useful for anyone sitting the P1 exam and a practical proof that thoughtful UI design makes studying less painful.",
     learned:
-      "A good visualization of an algorithm teaches more than the algorithm's pseudocode ever could.",
+      "Constraints are liberating. Working without a framework forces you to understand what frameworks actually do for you.",
   },
   {
     slug: "online-merit-platform",
@@ -126,71 +120,73 @@ export const projects: Project[] = [
     category: "Business & Strategy",
     year: "2025",
     description:
-      "A business concept for a transparent online merit-making and temple-donation platform.",
+      "A business concept for a transparent, digitised merit-making and temple-donation platform that builds trust through a visible fund trail.",
     role: "Founder / Product Concept",
     tools: ["Notion", "Figma", "Business Model Canvas"],
-    notionUrl: "https://www.notion.so/your-workspace/online-merit",
     featured: false,
     coverImage:
       "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "builder",
     skills: ["strategy", "design", "marketing"],
-    brief: "Make traditional merit-making transparent, trustworthy, and digital.",
+    brief: "Bring traditional merit-making into a digital-first, trust-first era.",
     challenge:
-      "Trust is everything in donation flows, and the audience is not digital-native.",
+      "Donation flows live and die on trust — especially when the audience skews older and is not native to digital payments.",
     process:
-      "Mapped the donor journey, designed a transparency ledger concept, and modelled the revenue and trust loop.",
-    output: "A validated concept deck with UX flows and a transparency mechanism.",
-    impact: "Framework reusable for any trust-sensitive donation product.",
+      "Mapped the donor journey end-to-end, designed a ledger-based transparency mechanism, and modelled the revenue and network effects.",
+    output: "A validated concept deck with UX flows, a trust model, and a go-to-market framework.",
+    impact: "The transparency framework is reusable for any donation product where accountability is the core value proposition.",
     learned: "Trust is a feature you design for, not a tagline you write.",
   },
   {
     slug: "posn-skr-content",
-    title: "POSN.SKR Olympiad Prep",
+    title: "SKR Academic Olympiad",
     category: "Academic",
     year: "2023",
     description:
-      "An organised content project supporting Olympiad / POSN science preparation for younger students.",
-    role: "Content Creator & Mentor",
-    tools: ["Notion", "LaTeX", "Canva"],
-    notionUrl: "https://www.notion.so/your-workspace/posn-skr",
+      "Founded and led an educational community to democratise access to POSN / Academic Olympiad resources — grew from zero to 470+ followers, then handed off to the next generation who scaled it past 1,000.",
+    role: "Founder & Head Mentor",
+    tools: ["Notion", "LaTeX", "Canva", "Instagram"],
+    liveUrl: "https://www.instagram.com/skr_academic_olympiad/",
     featured: false,
     coverImage:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "posn",
     skills: ["presentation", "strategy"],
-    brief: "Pay forward the POSN turning point that changed my own trajectory.",
+    brief: "Pay forward the POSN turning point that changed my own trajectory — and make it easier for the next student.",
     challenge:
-      "Olympiad material is intimidating and scattered across hard-to-find sources.",
+      "Olympiad material is intimidating, gated, and scattered across hard-to-find sources. Most students don't know where to start.",
     process:
-      "Curated structured notes and problem sets in Notion and mentored juniors through them.",
-    output: "A growing, reusable prep knowledge base for the next cohort.",
-    impact: "Lowered the barrier for younger students entering the Olympiad path.",
-    learned: "Teaching a thing is the fastest way to truly understand it.",
+      "Built a structured Notion knowledge base of notes and problem sets, recruited senior mentors, and ran consultation sessions for students inside and outside the school.",
+    output:
+      "A live community with 470+ followers at handoff — sustained and grown to 1,000+ by the next cohort.",
+    impact:
+      "Lowered the barrier for younger students entering the Olympiad path, and built a sustainable operation that outlasted the founder.",
+    learned: "Teaching a thing is the fastest way to truly understand it. And a community only scales if you build it to run without you.",
   },
   {
     slug: "ai-web3-learning",
-    title: "AI / Web3 Learning Lab",
-    category: "Coding / GitHub",
-    year: "2026",
+    title: "Onchain Bootcamp 2025",
+    category: "Web3 / Blockchain",
+    year: "2025",
     description:
-      "Ongoing self-driven exploration of AI agents, blockchain, and event-driven builder work.",
-    role: "Builder / Researcher",
-    tools: ["Python", "Solidity", "LangChain", "Next.js", "The Graph"],
-    githubUrl: "https://github.com/your-github-username/ai-web3-lab",
-    notionUrl: "https://www.notion.so/your-workspace/ai-web3-lab",
+      "2nd Runner Up at Onchain Bootcamp 2025 — a competitive blockchain programme where I joined as Business Developer, bridging the gap between on-chain mechanics and real-world business cases.",
+    role: "Business Developer",
+    tools: ["Pitch Deck", "Tokenomics", "Notion", "Market Research"],
     featured: true,
     coverImage:
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=60",
     timelinePhase: "future",
     skills: ["coding", "web3", "data", "strategy"],
-    brief: "Stay on the frontier — learn by shipping small experiments constantly.",
-    challenge: "The space moves weekly; depth and breadth are in constant tension.",
+    brief: "Prove that a blockchain project can work as a real business — not just a whitepaper.",
+    challenge:
+      "Most Web3 teams are technically strong but struggle to articulate value to a non-crypto audience. My job was to close that gap.",
     process:
-      "Run a cadence of small builds: agent demos, smart-contract experiments, and write-ups.",
-    output: "A public lab of repos, notes, and demos that compounds over time.",
-    impact: "Keeps my skills current and feeds talks, events, and collaborations.",
-    learned: "The journey has no final destination — this is the orbit, not the arrival.",
+      "Researched the on-chain ecosystem, modelled the business and tokenomics, crafted the go-to-market narrative, and co-led the final pitch.",
+    output:
+      "A 2nd Runner Up finish and a solid blueprint for translating blockchain mechanics into investor-ready business language.",
+    impact:
+      "Confirmed that the most valuable skill in Web3 right now is not coding Solidity — it's building the bridge between the tech and the people who need to believe in it.",
+    learned: "Crypto moves fast, but business fundamentals don't. Master both.",
   },
 ];
 
