@@ -1,11 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Starfield from "@/components/Starfield";
-import HeroSpace from "@/components/HeroSpace";
-import StarTimeline from "@/components/StarTimeline";
-import ProjectCatalog from "@/components/ProjectCatalog";
-import GitHubConstellation from "@/components/GitHubConstellation";
-import SkillsConstellation from "@/components/SkillsConstellation";
-import SocialDock from "@/components/SocialDock";
+import Hero from "@/components/Hero";
+import SelectedWorks from "@/components/SelectedWorks";
+import ExperienceHighlights from "@/components/ExperienceHighlights";
+import SkillGroups from "@/components/SkillGroups";
+import GitHubPreview from "@/components/GitHubPreview";
+import ContactCTA from "@/components/ContactCTA";
+import Footer from "@/components/Footer";
 import EasterEgg from "@/components/EasterEgg";
 import { getProjects } from "@/lib/notion";
 
@@ -20,16 +21,14 @@ export default async function Home() {
       <Starfield />
       <Navbar />
       <main>
-        <HeroSpace />
-        <StarTimeline />
-        <ProjectCatalog projects={projects} />
-        <GitHubConstellation />
-        <SkillsConstellation />
-        <SocialDock />
+        <Hero />
+        <SelectedWorks projects={projects} />
+        <ExperienceHighlights />
+        <SkillGroups />
+        <GitHubPreview />
+        <ContactCTA />
       </main>
-      <footer className="border-t border-white/10 py-8 text-center text-xs text-starwhite/40">
-        Built as an Endless Orbit — a journey with no final destination. ✦
-      </footer>
+      <Footer />
       <EasterEgg />
     </>
   );

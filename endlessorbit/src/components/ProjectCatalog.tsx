@@ -10,11 +10,11 @@ import { cn } from "@/lib/utils";
 const CATEGORIES: (ProjectCategory | "All")[] = [
   "All",
   "Coding / GitHub",
+  "Web3/Blockchain",
+  "Hackathon/Competition",
   "Business & Strategy",
-  "Event / Community",
   "Data Science",
-  "Marketing",
-  "Design / Creative",
+  "Event / Community",
   "Academic",
 ];
 
@@ -82,26 +82,46 @@ export default function ProjectCatalog({ projects }: { projects: Project[] }) {
           >
             <AnimatePresence mode="popLayout">
               {competitions.map((p) => (
-                <ProjectCard key={p.slug} project={p} />
+                <motion.div
+                  key={p.slug}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ProjectCard project={p} />
+                </motion.div>
               ))}
             </AnimatePresence>
           </motion.div>
         </>
       )}
 
-      {/* Projects & Work section */}
+      {/* Work section */}
       {work.length > 0 && (
         <>
-          <h3 className="mb-4 font-display text-sm uppercase tracking-wider text-starwhite/60">
-            Projects &amp; Work
-          </h3>
+          {competitions.length > 0 && (
+            <h3 className="mb-4 font-display text-sm uppercase tracking-wider text-starwhite/60">
+              Projects &amp; Work
+            </h3>
+          )}
           <motion.div
             layout
             className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
               {work.map((p) => (
-                <ProjectCard key={p.slug} project={p} />
+                <motion.div
+                  key={p.slug}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ProjectCard project={p} />
+                </motion.div>
               ))}
             </AnimatePresence>
           </motion.div>
@@ -109,8 +129,8 @@ export default function ProjectCatalog({ projects }: { projects: Project[] }) {
       )}
 
       {filtered.length === 0 && (
-        <p className="mt-12 text-center text-starwhite/50">
-          No missions in this sector yet. 🛰️
+        <p className="py-20 text-center text-starwhite/40">
+          No projects match this filter.
         </p>
       )}
     </section>

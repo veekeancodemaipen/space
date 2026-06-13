@@ -19,39 +19,45 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://your-domain.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://space-puce-two.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${profile.name} — Endless Orbit`,
+    default: `${profile.name} — Portfolio`,
     template: `%s · ${profile.name}`,
   },
   description:
-    "Personal portfolio of Yossavee Adisornsuwan — EE student at Chulalongkorn University. Projects, competitions, and community work across engineering, business development, and Web3.",
+    "Portfolio of Yossavee Adisornsuwan — EE student at Chulalongkorn University, business developer, and student builder working across Web3, data, product, and community.",
   keywords: [
     "portfolio",
-    "space",
+    "Yossavee",
+    "Vee",
     "builder",
-    "developer",
     "Web3",
-    "data science",
+    "data",
+    "Chulalongkorn",
+    "EE",
+    "business development",
+    "hackathon",
     "case competition",
     "POSN",
   ],
   authors: [{ name: profile.name }],
   openGraph: {
-    title: `${profile.name} — Endless Orbit`,
+    title: `${profile.name} — Portfolio`,
     description:
-      "Personal portfolio — projects, competitions, and community work across engineering, business development, and Web3.",
+      "EE student, business developer, and student builder — projects across Web3, data, product, and community.",
     url: siteUrl,
-    siteName: `${profile.name} — Endless Orbit`,
+    siteName: `${profile.name} — Portfolio`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — Endless Orbit`,
-    description: "Personal portfolio of Yossavee Adisornsuwan.",
+    title: `${profile.name} — Portfolio`,
+    description:
+      "EE student, business developer, and student builder — projects across Web3, data, product, and community.",
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],

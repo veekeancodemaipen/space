@@ -38,7 +38,8 @@ export const profile = {
   name: "Yossavee Adisornsuwan",
   shortName: "Yossavee",
   title: "EE Student @ Chula · Builder · Still Exploring",
-  tagline:
-    "I started as a kid who only loved games. Then I found science, coding, people, and projects.",
+  headline: "Building at the intersection of Business, Web3, Data, and Communities.",
+  intro:
+    "Hi, I'm Yossavee — an Electrical Engineering student at Chulalongkorn University, Business Development intern, and student builder interested in Web3, data, product strategy, and community-driven projects.",
   location: "Bangkok, Thailand",
 };
